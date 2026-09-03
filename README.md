@@ -7,8 +7,9 @@
 
 calculates the maximum PROCESS_DATE from the Loans table. How you use this will depend on context:
 
-If you use it as a measure, it will return the latest date in the current filter context—often the latest available loan record.
-If you use it as a calculated column, DAX will compute the same value for every row (the absolute max PROCESS_DATE in the whole table).
+If you use it as a **measure**, it will return the latest date in the current filter context—often the latest available loan record.
+
+If you use it as a **calculated column**, DAX will compute the same value for every row (the absolute max PROCESS_DATE in the whole table).
 Normally, MAX is used as a measure in Power BI for reporting, to show the latest transaction or event per grouping.
 Example as a measure:
 
