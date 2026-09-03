@@ -3,7 +3,7 @@
 
 #### Your DAX expression
 
-[MaxProcessDate] = MAX(Loans[PROCESS_DATE])
+<b>[MaxProcessDate] = MAX(Loans[PROCESS_DATE])</b>
 
 calculates the maximum PROCESS_DATE from the Loans table. How you use this will depend on context:
 
@@ -14,7 +14,8 @@ If you use it as a **calculated column**, DAX will compute the same value for ev
 Normally, MAX is used as a measure in Power BI for reporting, to show the latest transaction or event per grouping.
 Example as a measure:
 
-MaxProcessDate = MAX(Loans[PROCESS_DATE])
+<b>MaxProcessDate = MAX(Loans[PROCESS_DATE])</b>
+
 This measure can then be dragged into visuals, and the max date will respect visuals’ filters (e.g., for each product, client, or region).
 
 #### Key Differences
@@ -49,7 +50,9 @@ Define Measures: Measures are DAX formulas that perform calculations on your dat
 Measures typically aggregate data (e.g., SUM, AVERAGE, COUNT) based on context.
 
 **Common DAX Functions**:
-SUM(), COUNTROWS(), CALCULATE(), FILTER(), ALL(), RELATED(), IF(), SWITCH()
+
+<b>SUM(), COUNTROWS(), CALCULATE(), FILTER(), ALL(), RELATED(), IF(), SWITCH()</b>
+
 Reusable Logic: Measures are highly reusable and meant for aggregations, unlike calculated columns, which are static.
 
 3. Context Evaluation
