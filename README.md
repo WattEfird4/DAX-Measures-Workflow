@@ -4,6 +4,7 @@
 #### Your DAX expression
 
 [MaxProcessDate] = MAX(Loans[PROCESS_DATE])
+
 calculates the maximum PROCESS_DATE from the Loans table. How you use this will depend on context:
 
 If you use it as a measure, it will return the latest date in the current filter context—often the latest available loan record.
